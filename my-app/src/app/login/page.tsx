@@ -24,7 +24,6 @@ export default function page() {
                             <ul className='bf'>
                                 <li>Threads</li>
                                 <li>More</li>
-
                             </ul>
                         </div>
                     </div>

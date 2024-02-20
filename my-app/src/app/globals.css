@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'hi';
-  src: url(../assets/fonts/Satisfy-Regular.ttf);
+  src: url(../assets/fonts/LobsterTwo-Regular.ttf);
 }
 
 :root {
@@ -79,10 +79,10 @@ body {
           border-radius: 4px;
           font-size: larger;
           width: 127%;
-          padding-inline: 15px;
+          padding-inline: 25px;
           padding-block: 5px;
           margin-top: -4px;
-          transform: translate(-45px);
+          transform: translate(-37px);
         }
 
         button {

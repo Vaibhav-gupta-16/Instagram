@@ -54,6 +54,7 @@ export default function page() {
 
                 </div >
 
+
                 <div className="row r2 ">
                     <div className="col-12">
                         <ul className='d-flex mt-4 justify-evenly align-middle'>
