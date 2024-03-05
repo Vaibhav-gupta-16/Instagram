@@ -22,10 +22,14 @@ body {
 
             h1 {
                 font-family: 'hi';
+                font-size: x-large;
+                margin-left: 14px;
             }
 
             li {
                 margin-block: 30px;
+
+
             }
 
             .bf {
