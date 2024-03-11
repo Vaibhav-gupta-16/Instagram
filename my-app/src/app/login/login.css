@@ -7,6 +7,7 @@ body {
 .cf {
     height: 735px;
 
+
     .row {
         height: 100%;
         background: black;
@@ -17,8 +18,14 @@ body {
         }
 
         .a {
-            height: 100%;
-            border-right: 1px solid rgb(16, 16, 16);
+            margin: 0px;
+            height: 735px;
+            border-right: 1px solid rgb(56, 55, 55);
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            overflow-x: hidden;
+            position: fixed;
 
             h1 {
                 font-family: 'hi';
@@ -32,9 +39,59 @@ body {
 
             }
 
+            #p {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background: url("../../assets/images/instagram_5968776\ \(1\).png");
+                background-position: center;
+                background-size: cover;
+                display: inline-block;
+                transform: translate(-7px, 10px);
+            }
+
             .bf {
                 margin-top: 90px;
             }
+        }
+
+        .b {
+            background: red;
+            height: 100%;
+            transform: translate(300px);
+            margin: 0px;
+
+            .cf2 {
+                margin: 0px;
+                height: 100%;
+
+                .r2 {
+                    height: 90px;
+                    /* background: blue; */
+
+                    .d1 {
+                        height: 50px;
+                        width: 50px;
+                        background: url(../../assets/images/instagram_5968776\ \(1\).png);
+                        background-size: cover;
+                        background-position: center;
+                        margin-block: 20px;
+                        margin-inline: 10px;
+                        border-radius: 50%;
+                        border: 3px solid black;
+                        outline: 2px solid red;
+                    }
+                }
+
+                .r3 {
+                    background: blueviolet;
+                }
+            }
+        }
+
+        .c {
+            background: rgba(255, 217, 0, 0.539);
+            transform: translate(300px);
         }
     }
 }
