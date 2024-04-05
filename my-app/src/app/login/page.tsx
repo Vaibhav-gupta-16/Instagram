@@ -3,7 +3,7 @@ import React from 'react'
 import './login.css'
 import '@fortawesome/fontawesome-svg-core/styles'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCompass, faHome, faPersonDotsFromLine, faSearch, faSquarePlus, faVideo } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faComment, faCompass, faEllipsis, faHome, faPaperPlane, faPersonDotsFromLine, faSearch, faSquarePlus, faVideo } from '@fortawesome/free-solid-svg-icons'
 import '@fortawesome/free-brands-svg-icons'
 import { faFacebookMessenger, faRedRiver } from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons/faHeart'
@@ -37,34 +37,50 @@ export default function page() {
 
                     <div className="col-6 b">
                         <div className="container-fluid cf2">
-                            <div className="row r2 flex carousel slide">
-                                <div className="carousel-inner">
-                                    <div className='d1 carousel-item active'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
-                                    <div className='d1 carousel-item'></div>
+                            <div className="row r2  ">
+                                <div className="story">
+                                    <div className='d1 '>1</div>
+                                    <div className='d1 '>2</div>
+                                    <div className='d1 '>3</div>
+                                    <div className='d1 '>4</div>
+                                    <div className='d1 '>5</div>
+                                    <div className='d1 '>6</div>
+                                    <div className='d1 '>7</div>
+                                    <div className='d1 '>8</div>
+                                    <div className='d1 '>9</div>
+                                    <div className='d1 '>10</div>
+                                    <div className='d1 '>11</div>
+                                    <div className='d1 '>12</div>
+                                    <div className='d1 '>13</div>
+                                    <div className='d1 '>14</div>
+                                    <div className='d1 '>15</div>
+                                    <div className='d1 '>16</div>
+                                    <div className='d1 '>17</div>
+
                                 </div>
 
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                </button>
+
                             </div>
 
-                            <div className="row r3"></div>
+                            <div className="row r3">
+
+                                <div className='h1'>
+                                    <div className='dp'></div>
+                                    <p className='p1'> Account name</p>
+                                    <FontAwesomeIcon className='f1' icon={faEllipsis} size='1x' />
+
+                                    <div className='pp1'>
+                                    </div>
+
+                                    <ul className='flex fonti'>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faHeart} size='1x' /></li>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faComment} size='1x' /></li>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faPaperPlane} size='1x' /></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
