@@ -1,7 +1,48 @@
+"use client"
+
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function page() {
+
+    const [email, setEmail] = useState('')
+    const [pass, setPass] = useState('')
+    const [errors, setErrors] = useState({});
+    const [valid, setValid] = useState(false);
+    useEffect(() => {
+        validform();
+    }, [email, pass])
+
+    const validform: any = () => {
+        let errors = {};
+
+
+
+        if (!email) {
+            // errors.email = 'Email is required.';
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            // errors.email = 'Email is invalid.';
+        }
+
+        if (!pass) {
+            // errors.pass = 'Password is required.';
+        } else if (pass.length < 6) {
+            // errors.pass = 'Password must be at least 6 characters.';
+        }
+
+        setErrors(errors);
+        setValid(Object.keys(errors).length === 0);
+    };
+    // Submit 
+    const Submit = () => {
+        if (valid) {
+            console.log('Form submitted successfully!');
+        } else {
+            console.log('Form has errors. Please correct them.');
+        }
+    };
+
+
     return (
         <>
 
@@ -17,16 +58,16 @@ export default function page() {
 
                             <h1 className='mt-5'>Instagram</h1><br />
                             <div>
-                                <input placeholder='phone number,username or email' type="text" />
+                                <input placeholder='phone number,username or email' onChange={(e) => console.log(e)} type="text" />
                             </div>
                             <br />
                             <div>
-                                <input placeholder='Password' type="password" />
+                                <input placeholder='Password' onChange={(e) => { setEmail }} type="password" />
                             </div>
                             <br />
                             <Link href={'./login'}>
                                 <div>
-                                    <button className=' px-36 '>Log in</button>
+                                    <button className=' px-36 ' onClick={Submit}>Log in</button>
                                 </div>
                             </Link>
 

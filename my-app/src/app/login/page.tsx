@@ -80,13 +80,58 @@ export default function page() {
                                     </ul>
                                 </div>
 
+
+                                <div className='h2'>
+                                    <div className='dp'></div>
+                                    <p className='p1'> Account name</p>
+                                    <FontAwesomeIcon className='f1' icon={faEllipsis} size='1x' />
+
+                                    <div className='pp1'>
+                                    </div>
+
+                                    <ul className='flex fonti'>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faHeart} size='1x' /></li>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faComment} size='1x' /></li>
+                                        <li><FontAwesomeIcon className='m-1 pi' icon={faPaperPlane} size='1x' /></li>
+
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div className="col-4 c">
 
+                        <div className='suggest'>
+                            <div className="yourphoto"></div>
+                            <div className='nm'>
+                                16vaibhav_
+                                <br /><p>Vaibhav Gupta</p>
+                            </div>
+                            <div className="switch">switch</div>
+                        </div>
+
+                        <div className='suggest1'>
+                            <div className="yourphoto"></div>
+                            <div className='nm'>
+                                16vaibhav_
+                                <br /><p>Vaibhav Gupta</p>
+                            </div>
+                            <div className="switch">switch</div>
+                        </div>
+
+                        <div className='suggest2'>
+                            <div className="yourphoto"></div>
+                            <div className='nm'>
+                                16vaibhav_
+                                <br /><p>Vaibhav Gupta</p>
+                            </div>
+                            <div className="switch">switch</div>
+                        </div>
+
                     </div>
+
+
 
                 </div>
             </div>
